@@ -1,0 +1,57 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-GB" lang="en-GB">
+<head profile="http://dublincore.org/documents/dcq-html/">
+
+<title>BBC - Barlesque - Test Page</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<!-- NOTE to be completed as per the BBC Metadata Standard -->
+<meta name="description" content="" />
+<meta name="keywords" content="" />
+<link rel="schema.dcterms" href="http://purl.org/dc/terms/" />
+<meta name="DCTERMS.created" content="2006-09-15T12:00:00Z" />
+<!--#config timefmt="%Y-%m-%dT%H:%M+0:00" -->
+<meta name="DCTERMS.modified" content="<!--#echo var="LAST_MODIFIED" -->" />
+<!--#config timefmt="%A, %d-%b-%Y %H:%M:%S %Z" -->
+
+<!-- NOTE Any display customisation you want to do should appear before the head Barlesque include. See the display_customisation section of help for more information -->
+
+<!--#include virtual="/includes/blq/include/blq_head.sssi" -->
+
+<!-- NOTE Example style and script tags - Please use or delete as appropriate -->
+<!-- NOTE Stylesheets MUST be included after the blq-head include due to the reset CSS technique included in Barlesque -->
+<!--[if IE]><![if gte IE 6]><![endif]-->
+<style type="text/css" media="screen">@import 'style/example.css';</style>
+<!--[if IE]><![endif]><![endif]-->
+<script type="text/javascript" src="script/example.js"></script>
+</head>
+
+<body>
+
+<!--#include virtual="/includes/blq/include/blq_body_first.sssi" -->
+
+<!-- NOTE All of the following content is contained in a div id="blq-main"-->
+
+<!-- NOTE Barlesque does not use the H1. This MUST be put in by the site developer -->
+<h1>Barlesque Test Page</h1>
+
+<!-- NOTE Site local navigation MUST always be id="blq-local-nav" -->
+<div id="blq-local-nav">
+	<!-- NOTE class="blq-hide" can be used to remove items from the screen, but leave them available to screenreaders -->
+	<h2 class="blq-hide">Local Navigation</h2>
+	<ul>
+		<li><a href="#">Nav item 1</a></li>
+		<li><a href="#">Nav item 2</a></li>
+		<li><a href="#">Nav item 3</a></li>
+	</ul>
+</div>
+
+<!-- NOTE #blq-content MUST be used on every page to contain the main page content as it is linked to by Barlesque's "Skip to content" link -->
+<div id="blq-content">
+	<!-- NOTE Skip to top links MUST always be href="#page-top" -->
+	<p><a href="#page-top">Skip to top</a></p>
+</div>
+
+<!--#include virtual="/includes/blq/include/blq_body_last.sssi" -->
+
+</body>
+</html>
